@@ -39,12 +39,24 @@
   background: var(--hover-gradient);
 }
 
+.btn-green {
+  font-size: 16px;
+  font-weight: 600;
+  color: #00ff88;
+  background: none;
+  padding: 12px 20px;
+  border: 1px solid #00ff88;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+
 nav {
   padding: 16px 200px;
   background-color: var(--primary-bg-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid #dddddd30;
 }
 nav .logo h2 {
   color: white;
@@ -78,19 +90,59 @@ nav .button img {
 
 #banner {
   background: url('assets/hero-bg.png');
+  background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  height: 760px;
-  width: 100%;
+  min-height: 100vh;
 }
 
-#banner .banner-image .image-circle {
+#banner .banner-content {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 101px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.image-circle {
-  width: 350px;
-  height: 350px;
-  margin: 0 auto;
+.banner-content .banner-image {
+  position: relative;
+}
+.img-circle {
+  max-width: 350px;
+  max-height: 350px;
+}
+.img-mic {
+  max-width: 200px;
+  max-height: 200px;
+  position: absolute;
+  left: 117px;
+  top: 90px;
+}
+
+.banner-content .banner-text h1 {
+  color: white;
+  font-weight: 800;
+  font-size: 60px;
+  margin-top: 40px;
+}
+.banner-content .banner-text p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  margin-top: 8px;
+}
+.banner-content .banner-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.banner-content .banner-button .btn {
+  padding: 12px 20px;
+}
+.banner-content .banner-button img {
+  vertical-align: middle;
+  margin-right: 8px;
 }
