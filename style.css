@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+:root {
+  --default-gradient: linear-gradient(
+    47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+  --hover-gradient: linear-gradient(
+    -47.64deg,
+    rgba(247, 233, 63, 1),
+    rgba(251, 9, 180, 1),
+    rgba(145, 0, 248, 1)
+  );
+
+  --primary-bg-color: #1a0b2e;
+  --secondary-bg-color: #230e3d;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: 600;
+  color: white;
+  background: var(--default-gradient);
+  padding: 12px 16px;
+  border: none;
+  border-radius: 1000px;
+  cursor: pointer;
+}
+.btn:hover {
+  background: var(--hover-gradient);
+}
+
+nav {
+  padding: 16px 200px;
+  background-color: var(--primary-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .logo h2 {
+  color: white;
+  font-size: 32px;
+}
+nav .logo span {
+  background: var(--default-gradient);
+  font-size: 32px;
+  background-clip: text;
+  color: transparent;
+}
+
+nav .menu ul {
+  display: flex;
+  gap: 32px;
+}
+
+nav .menu ul li {
+  list-style: none;
+}
+nav .menu ul li a {
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+}
+
+nav .button img {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+#banner {
+  background: url('assets/hero-bg.png');
+  background-repeat: no-repeat;
+  height: 760px;
+  width: 100%;
+}
+
+#banner .banner-image .image-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-circle {
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+}
