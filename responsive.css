@@ -88,6 +88,83 @@
     font-size: 40px;
     margin-bottom: 16px;
   }
+
+  /* grid section */
+
+  #grid {
+    padding: 40px 20px;
+  }
+
+  #grid .grid-container h1 {
+    font-size: 32px;
+    margin-bottom: 16px;
+  }
+
+  .grid-container .grid-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-content .items {
+    padding: 24px;
+  }
+
+  .grid-content .items h2 {
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  /* feature section */
+
+  #feature .feature-container {
+    padding: 40px 20px;
+  }
+
+  #feature .feature-container h1 {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .feature-container .feature-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 120px;
+  }
+
+  .videos .video-title {
+    padding: 16px;
+  }
+
+  .videos .video-title h2 {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .videos .video-title p {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+
+  .host-container .host-area {
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px;
+    justify-content: center;
+  }
+  .host-area .host-info h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  .host-area .host-info p {
+    text-align: center;
+  }
+  .host-info .host-social {
+    justify-content: center;
+}
+
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
