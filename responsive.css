@@ -136,6 +136,10 @@
     width: 400px;
   }
 
+  .videos .video-frame iframe {
+    height: 225px;
+  }
+
   .videos .video-title {
     padding: 16px;
   }
