@@ -231,6 +231,7 @@ nav .button img {
   color: var(--dark-white);
   font-size: 16px;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 /* grid section  */

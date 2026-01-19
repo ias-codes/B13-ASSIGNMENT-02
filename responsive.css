@@ -59,6 +59,35 @@
     margin-top: 0px;
     max-width: 400px;
   }
+
+  /* about section */
+  #about .about-container {
+    padding: 40px 20px;
+  }
+  .about-container .about-text {
+    margin-bottom: 40px;
+  }
+  .about-container .about-text h1 {
+    font-size: 32px;
+  }
+  .about-container .about-text p {
+    max-width: 450px;
+    margin-bottom: 0;
+  }
+  .about-container .about-text .p-one {
+    margin-bottom: 40px;
+  }
+
+  .about-container .about-rating {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .about-container .about-rating .rating h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
