@@ -23,7 +23,11 @@
 
   --primary-bg-color: #1a0b2e;
   --secondary-bg-color: #230e3d;
+  --green-color: #00ff88;
+  --dark-white: rgba(255, 255, 255, 0.8);
 }
+
+/* shared style  */
 
 .btn {
   font-size: 16px;
@@ -49,6 +53,8 @@
   border-radius: 1000px;
   cursor: pointer;
 }
+
+/* nav bar  */
 
 nav {
   padding: 16px 200px;
@@ -88,12 +94,13 @@ nav .button img {
   margin-left: 4px;
 }
 
+/* banner section */
+
 #banner {
-  background: url('assets/hero-bg.png');
+  /* background: url('assets/hero-bg.png');
   background-size: cover;
   background-position: center center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
+  background-repeat: no-repeat; */
 }
 
 #banner .banner-content {
@@ -103,6 +110,11 @@ nav .button img {
   padding-top: 101px;
   flex-direction: column;
   text-align: center;
+  background: url('assets/hero-bg.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  /* padding-bottom: 101px; */
 }
 
 .banner-content .banner-image {
@@ -145,4 +157,54 @@ nav .button img {
 .banner-content .banner-button img {
   vertical-align: middle;
   margin-right: 8px;
+}
+
+/* about section */
+
+#about .about-container {
+  background-color: var(--primary-bg-color);
+  padding: 50px 200px 120px;
+}
+
+.about-container .about-text {
+  text-align: center;
+  border-bottom: 1px solid #dddddd30;
+  margin-bottom: 80px;
+}
+.about-container .about-text h1 {
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.about-container .about-text p {
+  color: var(--dark-white);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  max-width: 800px;
+  margin: 0 auto 16px;
+}
+.about-container .about-text .p-one {
+  margin-bottom: 80px;
+}
+
+.about-container .about-rating {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  text-align: center;
+}
+
+.about-container .about-rating .rating h1 {
+  font-size: 48px;
+  font-weight: 900;
+  color: var(--green-color);
+}
+.about-container .about-rating .rating span {
+  color: var(--dark-white);
+  font-size: 16px;
+  font-weight: 400;
 }
