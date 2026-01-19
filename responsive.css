@@ -17,9 +17,7 @@
   }
   /* bANNER */
   #banner .banner-content {
-    background: url('assets/hero-bg.png');
-    background-size: 100% 100%;
-    background-position: center;
+    background-position: center center;
     padding: 40px 20px;
   }
 
@@ -131,7 +129,11 @@
     align-items: center;
     justify-content: center;
     gap: 16px;
-    margin-bottom: 120px;
+    margin-bottom: 60px;
+  }
+
+  .feature-videos .videos {
+    width: 400px;
   }
 
   .videos .video-title {
@@ -162,9 +164,29 @@
   }
   .host-info .host-social {
     justify-content: center;
-}
+  }
 
+  /* footer area */
 
+  footer {
+    width: 440px;
+    height: 248px;
+  }
+
+  #footer-container .footer-content {
+    padding: 40px 20px;
+    gap: 24px;
+    background-size: cover;
+  }
+
+  .footer-content h1 {
+    font-size: 32px;
+  }
+  .footer-content .footer-social {
+    width: 255px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
