@@ -114,7 +114,7 @@ nav .button img {
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  /* padding-bottom: 101px; */
+  padding-bottom: 101px;
 }
 
 .banner-content .banner-image {
@@ -373,4 +373,53 @@ nav .button img {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* footer area */
+
+#footer-container {
+  background: url('assets/footer-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 412px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer-container .footer-content {
+  padding: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.footer-content h1 {
+  color: white;
+  font-size: 60px;
+  font-weight: 900;
+}
+.footer-content h1 span {
+  background: var(--default-gradient);
+  background-clip: text;
+  color: transparent;
+}
+
+.footer-content .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  color: var(--dark-white);
+}
+.footer-social img {
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.footer-content .copy {
+  color: var(--dark-white);
+  font-size: 16px;
 }
