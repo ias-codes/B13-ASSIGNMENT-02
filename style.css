@@ -27,6 +27,10 @@
   --dark-white: rgba(255, 255, 255, 0.6);
 }
 
+body{
+  /* background-color: var(--primary-bg-color); */
+}
+
 /* shared style  */
 
 .btn {
@@ -104,24 +108,20 @@ nav .button img {
 /* banner section */
 
 #banner {
-  /* background: url('assets/hero-bg.png');
+  background: url('assets/hero-bg.png');
+  /* background-size: 100% 100%; */
   background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; */
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 101px 0px;
 }
 
 #banner .banner-content {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 101px;
   flex-direction: column;
   text-align: center;
-  background: url('assets/hero-bg.png');
-  background-size: 100% 100%;
-  background-position: center top;
-  background-repeat: no-repeat;
-  padding-bottom: 101px;
 }
 
 .banner-content .banner-image {

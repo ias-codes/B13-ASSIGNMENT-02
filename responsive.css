@@ -6,35 +6,37 @@
   nav {
     padding: 16px 20px;
   }
-  nav .menu {
-    display: none;
-  }
+  nav .menu,
   nav .button {
     display: none;
   }
+
   nav .hamburger-menu {
     display: block;
   }
   /* bANNER */
-  #banner .banner-content {
-    background-position: center center;
+
+  #banner {
     padding: 40px 20px;
+    background-size: 100% 100%;
   }
 
   .img-circle {
     max-width: 200px;
     max-height: 200px;
+    position: relative;
+    top: 20px;
   }
   .img-mic {
     max-width: 80px;
     max-height: 80px;
-    left: 70px;
-    top: 60px;
+    left: 75px;
+    top: 80px;
   }
   .banner-image .img-new {
     position: absolute;
     top: 0;
-    left: 120px;
+    left: 110px;
   }
   @keyframes scale {
     0% {
@@ -50,7 +52,7 @@
 
   .banner-content .banner-text h1 {
     font-size: 40px;
-    margin-top: 24px;
+    margin-top: 44px;
   }
   .banner-content .banner-text p {
     color: rgba(255, 255, 255, 0.8);
@@ -173,14 +175,19 @@
   /* footer area */
 
   footer {
-    width: 440px;
-    height: 248px;
+    background-size: cover;
+    max-height: 248px;
+    background-position: center;
+  }
+
+  #footer-container {
+    display: flex;
+    /* align-items: end; */
   }
 
   #footer-container .footer-content {
     padding: 40px 20px;
     gap: 24px;
-    background-size: cover;
   }
 
   .footer-content h1 {
@@ -194,7 +201,4 @@
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-  body {
-    background-color: aqua;
-  }
 }
